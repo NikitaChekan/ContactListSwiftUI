@@ -15,11 +15,15 @@ struct ContentView: View {
                     Image(systemName: "person.3.fill")
                     Text("Contacts")
                 }
+                .toolbar(.visible, for: .tabBar)
+                .toolbarBackground(Color.gray.opacity(0.1), for: .tabBar)
             CustomContactList()
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("Numbers")
                 }
+                .toolbar(.visible, for: .tabBar)
+                .toolbarBackground(Color.gray.opacity(0.1), for: .tabBar)
         }
     }
 }

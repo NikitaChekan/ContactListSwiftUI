@@ -102,9 +102,9 @@
 			children = (
 				DA3CAD7B29548209008B1570 /* ContentView.swift */,
 				DA3CAD8E29548641008B1570 /* HomeScreenView.swift */,
-				DA3CAD9229548AE7008B1570 /* ContactRowView.swift */,
 				DA3CAD94295494C9008B1570 /* ContactDetailsView.swift */,
 				DA3CAD902954887F008B1570 /* CustomContactList.swift */,
+				DA3CAD9229548AE7008B1570 /* ContactRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
