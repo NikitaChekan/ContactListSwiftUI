@@ -14,6 +14,7 @@
 		DA3CAD8929548431008B1570 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8829548431008B1570 /* Person.swift */; };
 		DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8B2954843B008B1570 /* DataStore.swift */; };
 		DA3CAD8F29548641008B1570 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8E29548641008B1570 /* HomeScreenView.swift */; };
+		DA3CAD912954887F008B1570 /* CustomContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD902954887F008B1570 /* CustomContactList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DA3CAD8829548431008B1570 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DA3CAD8B2954843B008B1570 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		DA3CAD8E29548641008B1570 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		DA3CAD902954887F008B1570 /* CustomContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContactList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				DA3CAD7B29548209008B1570 /* ContentView.swift */,
 				DA3CAD8E29548641008B1570 /* HomeScreenView.swift */,
+				DA3CAD902954887F008B1570 /* CustomContactList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				DA3CAD8929548431008B1570 /* Person.swift in Sources */,
 				DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */,
 				DA3CAD8F29548641008B1570 /* HomeScreenView.swift in Sources */,
+				DA3CAD912954887F008B1570 /* CustomContactList.swift in Sources */,
 				DA3CAD7C29548209008B1570 /* ContentView.swift in Sources */,
 				DA3CAD7A29548209008B1570 /* ContactListSwiftUIApp.swift in Sources */,
 			);
