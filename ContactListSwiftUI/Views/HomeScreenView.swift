@@ -9,10 +9,18 @@ import SwiftUI
 
 struct HomeScreenView: View {
     
-    private var contactList = Person.getContactList()
+    let contactList = Person.getContactList()
     
     var body: some View {
-        Text("Contact List!")
+        NavigationStack {
+            List(contactList) { contact in
+                NavigationLink(
+                    contact.fullname,
+                    destination: ContactDetailsView()
+                )
+            }
+        }
+        .navigationTitle("Contact List")
     }
 }
 
