@@ -13,6 +13,7 @@
 		DA3CAD812954820A008B1570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3CAD802954820A008B1570 /* Preview Assets.xcassets */; };
 		DA3CAD8929548431008B1570 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8829548431008B1570 /* Person.swift */; };
 		DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8B2954843B008B1570 /* DataStore.swift */; };
+		DA3CAD8F29548641008B1570 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8E29548641008B1570 /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DA3CAD802954820A008B1570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA3CAD8829548431008B1570 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DA3CAD8B2954843B008B1570 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		DA3CAD8E29548641008B1570 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DA3CAD7B29548209008B1570 /* ContentView.swift */,
+				DA3CAD8E29548641008B1570 /* HomeScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				DA3CAD8929548431008B1570 /* Person.swift in Sources */,
 				DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */,
+				DA3CAD8F29548641008B1570 /* HomeScreenView.swift in Sources */,
 				DA3CAD7C29548209008B1570 /* ContentView.swift in Sources */,
 				DA3CAD7A29548209008B1570 /* ContactListSwiftUIApp.swift in Sources */,
 			);
