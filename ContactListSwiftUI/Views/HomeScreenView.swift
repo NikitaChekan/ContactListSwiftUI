@@ -19,8 +19,9 @@ struct HomeScreenView: View {
                     destination: ContactDetailsView()
                 )
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
-        .navigationTitle("Contact List")
     }
 }
 
