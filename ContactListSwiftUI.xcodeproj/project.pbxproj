@@ -11,6 +11,8 @@
 		DA3CAD7C29548209008B1570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD7B29548209008B1570 /* ContentView.swift */; };
 		DA3CAD7E2954820A008B1570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3CAD7D2954820A008B1570 /* Assets.xcassets */; };
 		DA3CAD812954820A008B1570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3CAD802954820A008B1570 /* Preview Assets.xcassets */; };
+		DA3CAD8929548431008B1570 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8829548431008B1570 /* Person.swift */; };
+		DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CAD8B2954843B008B1570 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DA3CAD7B29548209008B1570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA3CAD7D2954820A008B1570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3CAD802954820A008B1570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA3CAD8829548431008B1570 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DA3CAD8B2954843B008B1570 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				DA3CAD7929548209008B1570 /* ContactListSwiftUIApp.swift */,
-				DA3CAD7B29548209008B1570 /* ContentView.swift */,
+				DA3CAD8729548431008B1570 /* Models */,
+				DA3CAD8A2954843B008B1570 /* Services */,
+				DA3CAD8D2954844B008B1570 /* Views */,
 				DA3CAD7D2954820A008B1570 /* Assets.xcassets */,
 				DA3CAD7F2954820A008B1570 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				DA3CAD802954820A008B1570 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA3CAD8729548431008B1570 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA3CAD8829548431008B1570 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA3CAD8A2954843B008B1570 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA3CAD8B2954843B008B1570 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA3CAD8D2954844B008B1570 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA3CAD7B29548209008B1570 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3CAD8929548431008B1570 /* Person.swift in Sources */,
+				DA3CAD8C2954843B008B1570 /* DataStore.swift in Sources */,
 				DA3CAD7C29548209008B1570 /* ContentView.swift in Sources */,
 				DA3CAD7A29548209008B1570 /* ContactListSwiftUIApp.swift in Sources */,
 			);
