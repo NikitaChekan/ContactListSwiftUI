@@ -17,7 +17,7 @@ struct ContentView: View {
                 }
                 .toolbar(.visible, for: .tabBar)
                 .toolbarBackground(Color.gray.opacity(0.1), for: .tabBar)
-            CustomContactList()
+            NumbersListView()
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("Numbers")

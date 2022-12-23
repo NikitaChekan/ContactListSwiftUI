@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactRowView: View {
     
     let content: String
-    let image: String ///
+    let image: String
     
     var body: some View {
         HStack {
@@ -27,7 +27,7 @@ struct ContactRowView_Previews: PreviewProvider {
     static var previews: some View {
         ContactRowView(
             content: Person.getContactList().randomElement()?.email ?? "",
-            image: "mail.fill"
+            image: "paperplane.fill"
         )
     }
 }
