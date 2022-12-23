@@ -9,15 +9,29 @@ import SwiftUI
 
 struct ContactDetailsView: View {
     
-    let person = Person.getContactList()
+    let person: Person
     
     var body: some View {
-        Text("\(person.count)")
+        VStack {
+            List() {
+                HStack {
+                    Spacer()
+                    Image(systemName: "person.fill")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .padding()
+                    Spacer()
+                }
+                ContactRowView(content: person.phone, image: "phone.fill")
+                ContactRowView(content: person.email, image: "mail.fill")
+            }
+            .navigationTitle(person.fullname)
+        }
     }
 }
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView()
+        ContactDetailsView(person: Person.getContactList().randomElement()!)
     }
 }

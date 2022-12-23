@@ -16,7 +16,7 @@ struct HomeScreenView: View {
             List(contactList) { contact in
                 NavigationLink(
                     contact.fullname,
-                    destination: ContactDetailsView()
+                    destination: ContactDetailsView(person: contact)
                 )
             }
             .listStyle(.plain)

@@ -9,26 +9,25 @@ import SwiftUI
 
 struct ContactRowView: View {
     
-    let email: String
-    let phone: String
+    let content: String
+    let image: String ///
     
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
+        HStack {
+            Image(systemName: "\(image)")
                 .resizable()
-                .frame(width: 100, height: 100)
-            Text(phone)
-            Text(email)
+                .frame(width: 18, height: 18)
+                .foregroundColor(.blue)
+            Text(content)
         }
-        .padding()
     }
 }
 
 struct ContactRowView_Previews: PreviewProvider {
     static var previews: some View {
         ContactRowView(
-            email: Person.getContactList().randomElement()?.email ?? "",
-            phone: Person.getContactList().randomElement()?.phone ?? ""
+            content: Person.getContactList().randomElement()?.email ?? "",
+            image: "mail.fill"
         )
     }
 }
