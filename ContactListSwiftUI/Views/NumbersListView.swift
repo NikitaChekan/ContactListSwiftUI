@@ -19,7 +19,7 @@ struct NumbersListView: View {
                     ContactRowView(content: number.email, image: "square.and.pencil")
                 }
             }
-            .navigationTitle("Contact List")
+            .navigationTitle("Numbers List")
         }
     }
 }

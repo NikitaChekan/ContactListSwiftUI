@@ -8,8 +8,8 @@
 import Foundation
 
 struct Person: Identifiable {
-    let id = UUID()
     
+    let id = UUID()
     let name: String
     let surname: String
     let email: String
