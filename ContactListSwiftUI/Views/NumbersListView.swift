@@ -14,13 +14,11 @@ struct NumbersListView: View {
     var body: some View {
         NavigationStack {
             List(numbersList) { number in
-                VStack {
-                    Text(number.fullname)
+                Section(header: Text(number.fullname)) {
                     ContactRowView(content: number.phone, image: "phone")
-                    ContactRowView(content: number.email, image: "tray")
+                    ContactRowView(content: number.email, image: "square.and.pencil")
                 }
             }
-            .listStyle(.plain)
             .navigationTitle("Contact List")
         }
     }
