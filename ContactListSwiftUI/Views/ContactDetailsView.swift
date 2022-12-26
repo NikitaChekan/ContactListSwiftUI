@@ -12,7 +12,6 @@ struct ContactDetailsView: View {
     let person: Person
     
     var body: some View {
-        VStack {
             List() {
                 HStack {
                     Spacer()
@@ -26,7 +25,6 @@ struct ContactDetailsView: View {
                 ContactRowView(content: person.email, image: "square.and.pencil")
             }
             .navigationTitle(person.fullname)
-        }
     }
 }
 

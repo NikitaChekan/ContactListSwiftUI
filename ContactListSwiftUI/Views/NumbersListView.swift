@@ -9,16 +9,17 @@ import SwiftUI
 
 struct NumbersListView: View {
     
-    let numbersList = Person.getContactList()
+    private let numbersList = Person.getContactList()
     
     var body: some View {
         NavigationStack {
             List(numbersList) { number in
-                Section(header: Text(number.fullname)) {
+                Section(header: Text(number.fullname).font(.headline)) {
                     ContactRowView(content: number.phone, image: "phone")
                     ContactRowView(content: number.email, image: "square.and.pencil")
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("Numbers List")
         }
     }
