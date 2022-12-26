@@ -12,7 +12,7 @@ struct ContactDetailsView: View {
     let person: Person
     
     var body: some View {
-            List() {
+            List {
                 HStack {
                     Spacer()
                     Image(systemName: "person.fill")
@@ -23,6 +23,10 @@ struct ContactDetailsView: View {
                 }
                 ContactRowView(content: person.phone, image: "phone")
                 ContactRowView(content: person.email, image: "square.and.pencil")
+                
+                // Вместо создания представления ContactRowView можно было вывести строки с помощью Label как показано ниже
+//                Label(person.phone, systemImage: "phone")
+//                Label(person.email, systemImage: "square.and.pencil")
             }
             .navigationTitle(person.fullname)
     }
@@ -30,6 +34,6 @@ struct ContactDetailsView: View {
 
 struct ContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView(person: Person.getContactList().randomElement()!)
+        ContactDetailsView(person: Person.getContactList().first!)
     }
 }

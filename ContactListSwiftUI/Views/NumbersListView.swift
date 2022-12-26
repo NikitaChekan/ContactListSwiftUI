@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NumbersListView: View {
     
-    private let numbersList = Person.getContactList()
+    let numbersList: [Person]
     
     var body: some View {
         NavigationStack {
@@ -27,6 +27,6 @@ struct NumbersListView: View {
 
 struct CustomContactList_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersListView()
+        NumbersListView(numbersList: Person.getContactList())
     }
 }
