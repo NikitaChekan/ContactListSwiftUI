@@ -24,7 +24,7 @@ struct ContactDetailsView: View {
                 ContactRowView(content: person.phone, image: "phone")
                 ContactRowView(content: person.email, image: "square.and.pencil")
                 
-                // Вместо создания представления ContactRowView можно было вывести строки с помощью Label как показано ниже
+// Вместо создания представления ContactRowView можно было вывести строки с помощью Label как показано ниже (то же самое в Sections NumbersListView)
 //                Label(person.phone, systemImage: "phone")
 //                Label(person.email, systemImage: "square.and.pencil")
             }
